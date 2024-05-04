@@ -29,7 +29,7 @@ client.on("messageCreate", async (message) => {
         `Server: ${status.id}\nLocale: ${status.name}\nMaintenance Status: ${
           status.maintenances.length > 0
             ? status.maintenances?.map((e) => `${e}\n`)
-            : "All goods WATDAPAK LAGAPAK!"
+            : "@everyone All goods WATDAPAK LAGAPAK!"
         }`
       );
     } else if (message.content.split(" ")[0] === "!riot-profile") {
