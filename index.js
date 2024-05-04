@@ -6,7 +6,6 @@ const { Client, GatewayIntentBits } = require("discord.js");
 require("dotenv").config();
 
 const app = express();
-const port = 3000;
 const platform = "ph2";
 const summonerId = "";
 const client = new Client({
@@ -107,6 +106,4 @@ async function getMatchHistory(summonerName) {
 
 client.login(process.env.DISCORD_TOKEN);
 
-app.listen(port, () => {
-  console.log(`Express server listening at http://localhost:${port}`);
-});
+app.listen();
